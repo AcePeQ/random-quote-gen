@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-* {
+html {
   font-size: 62.5%;
 }
 
@@ -20,8 +20,18 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
+  font-family: "Outfit", sans-serif;
 
   -webkit-font-smoothing: antialiased;
+
+  min-height: 100dvh;
+
+  background-color: #121721;
+  color: #e3e8ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img,
@@ -65,4 +75,46 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 480px;
+  width: 100%;
+}
+
+.app {
+  background: rgba(74, 85, 103, 0.4);
+
+  padding: 3rem;
+  border-radius: 9px;
+}
+
+.author {
+}
+
+.buttons {
+  margin-top: 1.5rem;
+
+  display: flex;
+
+  gap: 2rem;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  gap: 0.75rem;
+
+  border: none;
+
+  background-color: rgba(74, 85, 103, 0.4);
+  color: #e3e8ef;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 9px;
 }
